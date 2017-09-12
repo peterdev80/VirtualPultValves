@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using VirtualPultValves.Model;
 using System.Windows.Input;
+using ValueModel.BaseType;
 
 namespace VirtualPultValves.ViewModel
 {
@@ -12,17 +13,33 @@ namespace VirtualPultValves.ViewModel
         private ModelVariableRepository repos;
         public byte[] wagoDin = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0,0 ,0,0,0,0,0,0,0,0,0};
         public BitPosValue wagobit=0;
-        
-        
+        public BoolValue KO{ get; set; }
+
         public ViewModel_OVK()
         {
            repos = ModelVariableRepository.Instance;
-
+            KO= repos.BitValues[1].ValState[0];
 
 
         }
 
         #region Command
+        private RelayCommand cmd;
+        public ICommand Cmd
+        {
+            get
+            {
+                if (cmd == null)
+                    cmd = new RelayCommand(param => cmdSend(param));
+                return cmd;
+            }
+        }
+        private void cmdSend(object param)
+        {
+            //  repos.KomValues[1].SendCommand.Execute(param);
+            //  LinkInpu.Instance.SetSendVar(true, int.Parse(param.ToString()), 1);
+            System.Windows.MessageBox.Show("Click="+(param.ToString()));
+        }
         private RelayCommand _OVKUpKey, _OVKDownKey;
         public ICommand OVKUpKey
         {

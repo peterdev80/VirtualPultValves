@@ -60,6 +60,13 @@ namespace VirtualPultValves.Views
 
         }
 
-       
+        private void CheckBox_Click(object sender, RoutedEventArgs e)
+        {
+           // LinkInpu.Instance.SetSendVar(true, int.Parse(param.ToString()), 1);
+          //  MessageBox.Show("Click");
+        }
+        
+      
+      
     }
 }
