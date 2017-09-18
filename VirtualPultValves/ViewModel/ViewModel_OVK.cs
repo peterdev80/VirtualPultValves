@@ -36,12 +36,12 @@ namespace VirtualPultValves.ViewModel
         }
         private void cmdSend(object param)
         {
-            int i = Int32.Parse(param.ToString());
+           /* int i = Int32.Parse(param.ToString());
             if (i==23) { LinkInpu.Instance.SetSendVar(true, 23, 3); LinkInpu.Instance.SetSendVar(false, 24, 3); } else
-            { LinkInpu.Instance.SetSendVar(false, 23, 3); LinkInpu.Instance.SetSendVar(true, 24, 3); }
+            { LinkInpu.Instance.SetSendVar(false, 23, 3); LinkInpu.Instance.SetSendVar(true, 24, 3); }*/
             //  int i = Int32.Parse(param.ToString());
             //  repos.KomValues[1].SendCommand.Execute(param);
-            LinkInpu.Instance.SetSendVar(true, int.Parse(param.ToString()), 1);
+            LinkInpu.Instance.SetSendVar(true, int.Parse(param.ToString()), 3);
             //  System.Windows.MessageBox.Show("Click="+(param.ToString()));
         }
         private RelayCommand _OVKUpKey, _OVKDownKey;
