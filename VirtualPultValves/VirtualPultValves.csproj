@@ -40,12 +40,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="fmslapi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=800057c2b283a020, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="fmslapi">
       <HintPath>..\SergLibrary\fmslapi.dll</HintPath>
     </Reference>
-    <Reference Include="hostvega, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="hostvega">
       <HintPath>..\SergLibrary\hostvega.dll</HintPath>
     </Reference>
     <Reference Include="System" />

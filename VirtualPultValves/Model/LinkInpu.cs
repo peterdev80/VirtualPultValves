@@ -9,11 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Threading;
 using ValueModel.BaseModel;
-
 namespace VirtualPultValves.Model
 {
     public class LinkInpu
-
     {
         const int LINVAR = 6;
         const int LOUTVAR = 7;
@@ -32,7 +30,7 @@ namespace VirtualPultValves.Model
             }
         }
 
-       
+
 
         private BitVector32[] dins = new BitVector32[LOUTVAR];
         private void sendBuf()
@@ -62,11 +60,11 @@ namespace VirtualPultValves.Model
 
 
         }
-        public void SetSendVar(int vall,  int valnum)
+        public void SetSendVar(int vall, int valnum)
         {
             for (var i = 0; i < dins.Length; i++)
                 dins[i] = new BitVector32();
-            dins[valnum][BitVector32.CreateSection(100)]=vall;
+            dins[valnum][BitVector32.CreateSection(100)] = vall;
 
             sendBuf();
 
@@ -79,8 +77,8 @@ namespace VirtualPultValves.Model
 
         public LinkInpu()
         {
-      
-        var m = Manager.GetAPI("VirtKlapany", new Guid("{0BDF2636-CF7F-42D3-AF39-7801EDAFEFD5}"));
+
+            var m = Manager.GetAPI("VirtKlapany", new Guid("{0BDF2636-CF7F-42D3-AF39-7801EDAFEFD5}"));
 
             _chan = m.JoinChannel("IO_KLAPANS", null);
             _chan.SyncReceive = true;
@@ -104,15 +102,15 @@ namespace VirtualPultValves.Model
                     b[i] = rd.ReadUInt32();
 
                 var repos = ModelVariableRepository.Instance;
-             
+
                 for (int i = 0; i < 3; i++)
                 {
                     repos.BitValues[i].VaRStateInt = (Int32)b[i];
 
 
                 }
-                for (int i=0;i<3;i++)
-                    repos.IntValues[i].VaRStateInt= (Int32)b[i+3];
+                for (int i = 0; i < 3; i++)
+                    repos.IntValues[i].VaRStateInt = (Int32)b[i + 3];
 
 
             }

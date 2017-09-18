@@ -18,7 +18,7 @@ namespace VirtualPultValves.ViewModel
         public ViewModel_OVK()
         {
            repos = ModelVariableRepository.Instance;
-            KO= repos.BitValues[1].ValState[0];
+            KO= repos.BitValues[2].ValState[16];
 
 
         }
@@ -36,9 +36,13 @@ namespace VirtualPultValves.ViewModel
         }
         private void cmdSend(object param)
         {
+            int i = Int32.Parse(param.ToString());
+            if (i==23) { LinkInpu.Instance.SetSendVar(true, 23, 3); LinkInpu.Instance.SetSendVar(false, 24, 3); } else
+            { LinkInpu.Instance.SetSendVar(false, 23, 3); LinkInpu.Instance.SetSendVar(true, 24, 3); }
+            //  int i = Int32.Parse(param.ToString());
             //  repos.KomValues[1].SendCommand.Execute(param);
-            //  LinkInpu.Instance.SetSendVar(true, int.Parse(param.ToString()), 1);
-            System.Windows.MessageBox.Show("Click="+(param.ToString()));
+            LinkInpu.Instance.SetSendVar(true, int.Parse(param.ToString()), 1);
+            //  System.Windows.MessageBox.Show("Click="+(param.ToString()));
         }
         private RelayCommand _OVKUpKey, _OVKDownKey;
         public ICommand OVKUpKey

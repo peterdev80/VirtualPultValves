@@ -1063,7 +1063,7 @@
             <Setter Property="Background" Value="{StaticResource CheckRadioFillNormal}"/>
             <Setter Property="BorderBrush" Value="{StaticResource CheckRadioStrokeNormal}"/>
             <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="CommandParameter" Value="0"/>
+            <Setter Property="CommandParameter" Value="23"/>
             <!--добавляем для оживления тумблера КО-->
             <Setter Property="FocusVisualStyle" Value="{StaticResource EmptyCheckBoxFocusVisual}"/>
             <Setter Property="Template">
@@ -1083,7 +1083,7 @@
                             <DataTrigger Binding="{Binding KO.ValueState}" Value="True">
                                 <Setter Property="Visibility" TargetName="down" Value="Visible"/>
                                 <Setter Property="Visibility" TargetName="up" Value="Hidden"/>
-                                <Setter Property="CommandParameter" Value="1"/>
+                                <Setter Property="CommandParameter" Value="24"/>
                             </DataTrigger>
                         </ControlTemplate.Triggers>
                         <!--<ControlTemplate.Triggers>
