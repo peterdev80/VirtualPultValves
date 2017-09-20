@@ -87,7 +87,7 @@ namespace VirtualPultValves.ViewModel
         void Inpu1ModelSelect_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
             if (Inpu1ModelSelect.ValueState) InpuModelSelector.Instance.LoadedInpu = "ИнПУ-2";
-            if (Inpu2ModelSelect.ValueState) InpuModelSelector.Instance.LoadedInpu="ИнПУ-1"
+            if (Inpu2ModelSelect.ValueState) InpuModelSelector.Instance.LoadedInpu="ИнПУ-1";
             CommandManager.InvalidateRequerySuggested();
            
         }

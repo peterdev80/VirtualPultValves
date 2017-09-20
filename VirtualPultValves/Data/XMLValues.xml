@@ -8,10 +8,10 @@
 <!--| KeyState  :Бит в VarState       |  KeySend :бит в VarSnd                                                                -->
 <!--| Visible   :признак отображения в меню комманд (для передачи нескольких переменных в качестве обменна                    -->
 <Values>
-  <Value ValvesName="ИнПУ-1" Visible="True" Locate="ИнПУ"  >
+  <Value ValvesName="ИнПУ-1" Visible="True" Locate="ИнПУ" VarState="__FMS_WD_INPU1_LOADED" >
     
   </Value>
-  <Value ValvesName="ИнПУ-2" Visible="True" Locate="ИнПУ"  >
+  <Value ValvesName="ИнПУ-2" Visible="True" Locate="ИнПУ" VarState="__FMS_WD_INPU2_LOADED" >
 
   </Value>
   
