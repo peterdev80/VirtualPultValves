@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Threading;
+using fmslapi.Bindings.WPF;
 using ValueModel.BaseModel;
 namespace VirtualPultValves.Model
 {
@@ -86,6 +87,10 @@ namespace VirtualPultValves.Model
 
             _dt = new DispatcherTimer(TimeSpan.FromMilliseconds(50), DispatcherPriority.Normal, OnTimer, Dispatcher.CurrentDispatcher);
             _dt.Start();
+
+            var repos = ModelVariableRepository.Instance;
+            ExpressionBinding.SetBinding(repos.BoolFMSValues[1], BoolVarFMS.VaRStateBoolPropertyFMS, "__FMS_WD_INPU1_LOADED");
+            ExpressionBinding.SetBinding(repos.BoolFMSValues[0], BoolVarFMS.VaRStateBoolPropertyFMS, "__FMS_WD_INPU2_LOADED");
         }
         private void OnTimer(object sender, EventArgs e)
         {
