@@ -102,7 +102,7 @@ namespace VirtualPultValves.Model
                     b[i] = rd.ReadUInt32();
 
                 var repos = ModelVariableRepository.Instance;
-
+               
                 for (int i = 0; i < 3; i++)
                 {
                     repos.BitValues[i].VaRStateInt = (Int32)b[i];
@@ -111,6 +111,7 @@ namespace VirtualPultValves.Model
                 }
                 for (int i = 0; i < 3; i++)
                     repos.IntValues[i].VaRStateInt = (Int32)b[i + 3];
+                
 
 
             }
