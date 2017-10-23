@@ -143,6 +143,9 @@
     <Compile Include="Views\InpuFailed.xaml.cs">
       <DependentUpon>InpuFailed.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserControl2.xaml.cs">
+      <DependentUpon>UserControl2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ViewLDI11.xaml.cs">
       <DependentUpon>ViewLDI11.xaml</DependentUpon>
     </Compile>
@@ -260,6 +263,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\InpuFailed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControl2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

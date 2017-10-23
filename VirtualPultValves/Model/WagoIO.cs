@@ -51,10 +51,13 @@ namespace VirtualPultValves.Model
         {
             get
             {
-                if (instance == null)
-                    instance = new WagoIO();
+               
+                    if (instance == null)
+                        instance = new WagoIO();
+ 
                 
-                return instance;
+                    return instance;
+               
             }
         }
 
@@ -73,13 +76,17 @@ namespace VirtualPultValves.Model
             clInpu_2 = new BoolValue();
             cLapmPult = new BoolValue();
 
-            var m = Manager.GetAPI("VirtWago", new Guid("{F7AE9595-2CCD-4683-9240-BC5F135677A9}"));
+            try
+            {
+                var m = Manager.GetAPI("VirtWago", new Guid("{F7AE9595-2CCD-4683-9240-BC5F135677A9}"));
 
-            _sendchannel = m.SafeJoinChannel("IO_NEPTUN_TO_MODEL", null);
-            _rcvchannel = new SyncChannel(m.JoinChannel("MODEL_TO_WAGO", null));
+                _sendchannel = m.SafeJoinChannel("IO_NEPTUN_TO_MODEL", null);
+                _rcvchannel = new SyncChannel(m.JoinChannel("MODEL_TO_WAGO", null));
 
-            _dt = new DispatcherTimer(TimeSpan.FromMilliseconds(50), DispatcherPriority.Normal, OnTimer, Dispatcher.CurrentDispatcher);
-            _dt.Start();
+                _dt = new DispatcherTimer(TimeSpan.FromMilliseconds(50), DispatcherPriority.Normal, OnTimer, Dispatcher.CurrentDispatcher);
+                _dt.Start();
+            }
+            catch { }
         }
         
         private void OnTimer(object sender, EventArgs e)

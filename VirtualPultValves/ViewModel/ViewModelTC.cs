@@ -264,8 +264,11 @@ namespace VirtualPultValves.ViewModel
         }
         private void StageRev( int page)
         {
-
-            WagoIO.Instance.SetListTC(lst, page);
+          // try
+            {
+                WagoIO.Instance.SetListTC(lst, page);
+            }
+        //   catch { };
 
             T1.StageRev("АВАРИЯ^НОСИТЕЛЯ", new SolidColorBrush(Colors.Red), new SolidColorBrush(Colors.Silver));
             T2.StageRev("", new SolidColorBrush(Colors.Red), new SolidColorBrush(Colors.Silver));
