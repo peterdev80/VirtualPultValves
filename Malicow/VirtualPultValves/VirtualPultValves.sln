@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualPultValves", "VirtualPultValves.csproj", "{DC240F6E-15F0-468A-8EE5-57441CE394C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC240F6E-15F0-468A-8EE5-57441CE394C9}.Debug|x86.ActiveCfg = Debug|x86
+		{DC240F6E-15F0-468A-8EE5-57441CE394C9}.Debug|x86.Build.0 = Debug|x86
+		{DC240F6E-15F0-468A-8EE5-57441CE394C9}.Release|x86.ActiveCfg = Release|x86
+		{DC240F6E-15F0-468A-8EE5-57441CE394C9}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8ECE9880-E83B-4E22-9E44-91ED72234966}
+	EndGlobalSection
+EndGlobal

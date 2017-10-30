@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Виртуальные клапаны" Height="350" Width="525"
+        xmlns:my="clr-namespace:VirtualPultValves.Views;assembly=VirtualPultValves" 
+        WindowState="Maximized" MouseLeftButtonUp="Window_MouseLeftButtonUp" 
+        MouseLeftButtonDown="Window_MouseLeftButtonDown" Closed="Window_Closed" Closing="Window_Closing">
+    <Grid MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="106*" />
+            <ColumnDefinition Width="397*" />
+        </Grid.ColumnDefinitions>
+          <my:MainView  Name="mainView1" Grid.ColumnSpan="2" />
+    </Grid>
+</Window>

@@ -8,6 +8,8 @@ using fmslapi;
 using System.Windows.Threading;
 using System.Collections.Specialized;
 using ValueModel.BaseType;
+using System.ComponentModel;
+using System.Windows;
 
 namespace VirtualPultValves.Model
 {
@@ -75,8 +77,8 @@ namespace VirtualPultValves.Model
             clInpu_1 = new BoolValue();
             clInpu_2 = new BoolValue();
             cLapmPult = new BoolValue();
-
-            try
+           // if (!DesignerProperties.GetIsInDesignMode(Application.Current.MainWindow))
+          try
             {
                 var m = Manager.GetAPI("VirtWago", new Guid("{F7AE9595-2CCD-4683-9240-BC5F135677A9}"));
 
