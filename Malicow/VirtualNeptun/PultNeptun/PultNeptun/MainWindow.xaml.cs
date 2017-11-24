@@ -24,5 +24,16 @@ namespace PultNeptun
         {
             InitializeComponent();
         }
+        private void PultGlassButton_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void PultGlassButton_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+
+
+
+        }
     }
 }

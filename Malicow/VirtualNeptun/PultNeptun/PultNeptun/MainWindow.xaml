@@ -4,9 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PultNeptun"
+         xmlns:pc="clr-namespace:VirtualPultValves.PultControl;assembly=VirtualPultValves"
+             xmlns:my="clr-namespace:VirtualPultValves;assembly=VirtualPultValves"
+             xmlns:mv="clr-namespace:VirtualPultValves.Views;assembly=VirtualPultValves"       
+            
+            
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="992" Width="1980">
+    <local:LeftInpuView Height="Auto" Width="Auto"/>
+
 </Window>
