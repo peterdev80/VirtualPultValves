@@ -10,7 +10,8 @@
             
             
         mc:Ignorable="d"
-        Title="MainWindow" Height="992" Width="1980">
-    <local:LeftInpuView Height="Auto" Width="Auto"/>
-
+        Title="MainWindow" Height="992" Width="1679.2" Background="#FF7F7D7D">
+    <Grid>
+        <local:RInpuView Height="Auto" Width="Auto"/>
+    </Grid>
 </Window>
