@@ -15,7 +15,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -37,7 +37,8 @@
     <Reference Include="fmslapi">
       <HintPath>..\..\..\..\VirtualPultValves\bin\Debug\fmslapi.dll</HintPath>
     </Reference>
-    <Reference Include="hostvega">
+    <Reference Include="hostvega, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\VirtualPultValves\bin\Debug\hostvega.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -73,10 +74,19 @@
     <Compile Include="Inpu_2View.xaml.cs">
       <DependentUpon>Inpu_2View.xaml</DependentUpon>
     </Compile>
+    <Compile Include="mnReitPultView.xaml.cs">
+      <DependentUpon>mnReitPultView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="nmLeftPultView.xaml.cs">
+      <DependentUpon>nmLeftPultView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RInpuView.xaml.cs">
       <DependentUpon>RInpuView.xaml</DependentUpon>
     </Compile>
     <Compile Include="WConverter.cs" />
+    <Compile Include="WindowInpu.xaml.cs">
+      <DependentUpon>WindowInpu.xaml</DependentUpon>
+    </Compile>
     <Page Include="DictionaryNeptun.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -108,7 +118,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="mnReitPultView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="nmLeftPultView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RInpuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowInpu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

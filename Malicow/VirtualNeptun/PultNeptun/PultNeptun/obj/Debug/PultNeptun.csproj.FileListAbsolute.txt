@@ -12,6 +12,7 @@ D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\Inpu_2View.g.
 D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\LeftInpuView.g.cs
 D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\MainWindow.g.cs
 D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\RInpuView.g.cs
+D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\WindowInpu.g.cs
 D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\App.g.cs
 D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\PultNeptun_MarkupCompile.cache
@@ -23,9 +24,15 @@ D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\Inpu_2View.ba
 D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\LeftInpuView.baml
 D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\MainWindow.baml
 D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\RInpuView.baml
+D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\WindowInpu.baml
 D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\PultNeptun.g.resources
 D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\PultNeptun.Properties.Resources.resources
 D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\PultNeptun.csproj.GenerateResource.Cache
 D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\PultNeptun.csproj.CoreCompileInputs.cache
 D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\PultNeptun.exe
 D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\PultNeptun.pdb
+D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\nmLeftPultView.g.cs
+D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\nmLeftPultView.baml
+D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\mnReitPultView.g.cs
+D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\mnReitPultView.baml
+D:\GitKlapan\Malicow\VirtualNeptun\PultNeptun\PultNeptun\obj\Debug\PultNeptun.csprojResolveAssemblyReference.cache

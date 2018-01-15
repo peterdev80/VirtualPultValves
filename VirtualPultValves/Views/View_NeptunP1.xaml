@@ -186,9 +186,8 @@
             <pc:PultBigButton  Content="КОНТР&#xa;   ТС"  Grid.Row="1" FontSize="10.667" Grid.Column="1" Grid.ColumnSpan="2" x:Name="kts" />
 
         </Grid>
-        <Border x:Name="brdTen" BorderThickness="1" Grid.ColumnSpan="5" Grid.RowSpan="15" Background="#FFA6A4A4" Opacity="0.85" Style="{StaticResource BorderStyle1}" d:IsHidden="True" >
-        </Border>
-         </Grid>
+        <Border x:Name="brdTen" BorderThickness="1" Grid.ColumnSpan="5" Grid.RowSpan="15" Background="#FFA6A4A4" Opacity="0.85" Style="{StaticResource BorderStyle1}" />
+    </Grid>
 </UserControl>
 
 

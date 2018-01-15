@@ -1059,7 +1059,7 @@
                     <pc:PultLamp   VklLamp="{Binding Path=DejRegim.ValueState, Source={StaticResource vInPU}}" Grid.Column="3" HorizontalAlignment="Left" Margin="51,86.105,0,0" Grid.Row="1" VerticalAlignment="Top" Height="24" Width="24"/>
                     <TextBlock Grid.Column="3" HorizontalAlignment="Left" Margin="30,65.105,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Text="ДЕЖ РЕЖИМ"/></TextBlock>
                     <pc:PultLamp Grid.Column="3" HorizontalAlignment="Left" Margin="51,86.105,0,0" Grid.Row="1" VerticalAlignment="Top" Height="24" Width="24" VklLamp="{Binding DejRegim.ValueState, Source={StaticResource vInPU}}" />
-                    <mv:View_NeptunP1  Grid.Column="4" Grid.Row="1" Grid.RowSpan="3" Height="795" HorizontalAlignment="Left" Margin="6,0,0,0" x:Name="view_NeptunP11" VerticalAlignment="Top" Width="119" Visibility="{Binding InPU2Visible, Source={StaticResource vInPU}}" />
+                    <mv:View_NeptunP1  Grid.Column="4" Grid.Row="1" Grid.RowSpan="3" Height="795" HorizontalAlignment="Left" Margin="6,0,0,0" x:Name="view_NeptunP11" VerticalAlignment="Top" Width="119" Visibility="{Binding InPU2Visible, Source={StaticResource vInPU}}" PultVisual="True" />
                     <mv:View_RUS x:Name="RUSKlapan" Width="408.411" Grid.Column="3" Margin="-16.488,13.738,0,11" Grid.RowSpan="4" Grid.ColumnSpan="2" Visibility="Hidden"/>
                 </Grid>
 

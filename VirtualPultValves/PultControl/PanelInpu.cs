@@ -17,8 +17,8 @@ namespace VirtualPultValves.PultControl
         protected override Size MeasureOverride(Size sizeAvailable)
         {
 
-              double proporcion = 1.3333333333333333333333333333333;
-              if (TypePanel == 2) proporcion = 1.6;
+              double proporcion = 1.777777777777777777777777777778; //full-hd
+              if (TypePanel == 2) proporcion = 1.6;//Inpu пропорции
            
                 Size sizeDesired = new Size(0, 0);
                 double xW = 0d;

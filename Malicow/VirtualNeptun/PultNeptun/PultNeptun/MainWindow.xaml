@@ -10,8 +10,11 @@
             
             
         mc:Ignorable="d"
-        Title="MainWindow" Height="992" Width="1679.2" Background="#FF7F7D7D">
-    <Grid>
-        <local:RInpuView Height="Auto" Width="Auto"/>
+        Title="MainWindow" Background="#FF72EB0D" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Width="1600" Height="900">
+    <Grid Margin="444.6,358.8,500.2,-207.8">
+        <local:nmLeftPultView Margin="-444,-374.4,-518.4,187.2"  />
     </Grid>
+    <!-- <Canvas>
+        <local:LeftInpuView Height="Auto" Width="Auto"/>
+    </Canvas>-->
 </Window>

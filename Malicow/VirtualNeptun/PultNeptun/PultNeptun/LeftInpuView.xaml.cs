@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AVIAKOM;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -13,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VirtualPultValves.Views;
 
 namespace PultNeptun
 {
@@ -21,16 +23,13 @@ namespace PultNeptun
     /// </summary>
     public partial class LeftInpuView : UserControl
     {
-        int dpiX;//дпи текущкго монитора
-        public const int mmWidth=210; //Штрина ИнПУ
-        public const int mmHeight = 158;//Высота ИнПУ
+      
 
         public LeftInpuView()
         {
             InitializeComponent();
             //определяем DPI Монитора
-            var dpiXProperty = typeof(SystemParameters).GetProperty("DpiX", BindingFlags.NonPublic | BindingFlags.Static);
-            dpiX = (int)dpiXProperty.GetValue(null, null);
+          
         }
         private void PultGlassButton_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -42,6 +41,20 @@ namespace PultNeptun
 
            
 
+        }
+        private InpuPresenter InPUControl;
+        private InPUWin32View com;
+        private void WinPult_Loaded(object sender, RoutedEventArgs e)
+
+        {
+           // WinPult.Content = new InpuFailed();// new InpuPresenter(600, 800, 1, new InpuFailed(), new InpuFailed());
+
+           /* com = WinPult.Content as InPUWin32View;
+            if (com != null)
+            {
+                InPUControl = com.InPUControl;
+             
+            }*/
         }
     }
 }

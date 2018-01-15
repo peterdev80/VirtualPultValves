@@ -20,6 +20,24 @@ namespace VirtualPultValves.Views
     /// </summary>
     public partial class View_NeptunP1 : UserControl
     {
+        public static readonly DependencyProperty btTenProperty =
+         DependencyProperty.Register("btTen", typeof(Boolean),
+         typeof(View_NeptunP1), new UIPropertyMetadata(true, new PropertyChangedCallback(btTenChanged)));
+       
+        public Boolean btTen
+        {
+            get { return (Boolean)GetValue(btTenProperty); }
+            set { SetValue(btTenProperty, value); }
+           
+        }
+        private static void btTenChanged(DependencyObject depObj,
+           DependencyPropertyChangedEventArgs args)
+        {
+            View_NeptunP1 crt = (View_NeptunP1)depObj;
+           if ((Boolean)args.NewValue)  crt.brdTen.Visibility = Visibility.Visible;
+            crt.PultVisual = (Boolean)args.NewValue;
+
+        }
         private ViewModel.ViewModel_NeptunP1 vmp1;
 
         public View_NeptunP1()
@@ -95,6 +113,7 @@ namespace VirtualPultValves.Views
                     brdTen.Visibility = Visibility.Hidden;
                 }
             }
+            get { return _PultVisual; }
         }
 
         private void userControl_Loaded(object sender, RoutedEventArgs e)
