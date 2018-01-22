@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace PultNeptun
 {
     /// <summary>
-    /// Логика взаимодействия для nmLeftPultView.xaml
+    /// Логика взаимодействия для WindowInpuR.xaml
     /// </summary>
-    public partial class nmLeftPultView : UserControl
+    public partial class WindowInpuR : UserControl
     {
-        public nmLeftPultView()
+        public WindowInpuR()
         {
             InitializeComponent();
         }
