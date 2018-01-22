@@ -10,10 +10,8 @@
             
             
         mc:Ignorable="d"
-        Title="MainWindow" Background="#FF72EB0D" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Width="1600" Height="900">
-    <Grid>
-        <local:nmLeftPultView Width="Auto" Height="Auto"  />
-    </Grid>
+        Title="MainWindow" Background="#FF72EB0D" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Width="1980" Height="1000">
+    <local:WindowInpuR/>
     <!-- <Canvas>
         <local:LeftInpuView Height="Auto" Width="Auto"/>
     </Canvas>-->

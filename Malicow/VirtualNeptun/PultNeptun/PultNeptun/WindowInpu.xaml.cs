@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AVIAKOM;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VirtualPultValves.Views;
 
 namespace PultNeptun
 {
@@ -20,9 +22,21 @@ namespace PultNeptun
     /// </summary>
     public partial class WindowInpu : UserControl
     {
+        private InPUWin32View _inwin1 = new InPUWin32View();
+
+
+        public InpuPresenter InPUControl;
+
+       
+
+
         public WindowInpu()
         {
             InitializeComponent();
+         
+           
+          ///  _inwin1.InpuNum = 1;
+         //   WinPult.DataContext = _inwin1;
         }
         private void PultGlassButton_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {

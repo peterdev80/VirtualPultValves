@@ -34,12 +34,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="fmslapi">
-      <HintPath>..\..\..\..\VirtualPultValves\bin\Debug\fmslapi.dll</HintPath>
+    <Reference Include="fmslapi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SergLibrary\fmslapi.dll</HintPath>
     </Reference>
     <Reference Include="hostvega, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\VirtualPultValves\bin\Debug\hostvega.dll</HintPath>
+      <HintPath>..\..\..\..\SergLibrary\hostvega.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -68,38 +69,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Inpu_1View.xaml.cs">
-      <DependentUpon>Inpu_1View.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Inpu_2View.xaml.cs">
-      <DependentUpon>Inpu_2View.xaml</DependentUpon>
-    </Compile>
     <Compile Include="mnReitPultView.xaml.cs">
       <DependentUpon>mnReitPultView.xaml</DependentUpon>
     </Compile>
     <Compile Include="nmLeftPultView.xaml.cs">
       <DependentUpon>nmLeftPultView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RInpuView.xaml.cs">
-      <DependentUpon>RInpuView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="WConverter.cs" />
     <Compile Include="WindowInpu.xaml.cs">
       <DependentUpon>WindowInpu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowInpuR.xaml.cs">
+      <DependentUpon>WindowInpuR.xaml</DependentUpon>
+    </Compile>
     <Page Include="DictionaryNeptun.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Inpu_1View.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Inpu_2View.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="LeftInpuView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -110,9 +92,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="LeftInpuView.xaml.cs">
-      <DependentUpon>LeftInpuView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -126,11 +105,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RInpuView.xaml">
+    <Page Include="WindowInpu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WindowInpu.xaml">
+    <Page Include="WindowInpuR.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
