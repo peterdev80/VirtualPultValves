@@ -11,12 +11,12 @@
     <UserControl.Resources>
         <avm:ViewModel_InPU x:Key="vInPU"/>
     </UserControl.Resources>
-    <UserControl.CommandBindings>
-        <!-- <CommandBinding Command="{x:Static mv:View_InPU.BtnCmd}"
+   <!-- <UserControl.CommandBindings>
+        <CommandBinding Command="{x:Static vm:View_InPU.BtnCmd}"
                     Executed="BtnCmdExecuted"
-                    CanExecute="BtnCmdCanExecute"/>-->
+                    CanExecute="BtnCmdCanExecute"/>
 
-    </UserControl.CommandBindings>
+    </UserControl.CommandBindings>-->
 
 
     <Grid Background="#FF7A8486" >
@@ -42,7 +42,7 @@
 
 
         <Viewbox Grid.Column="4" Grid.RowSpan="4" Stretch="Fill" Grid.ColumnSpan="2">
-            <Canvas Height="864" Width="879">
+            <Canvas x:Name="roo" Height="864" Width="879" DataContext="{Binding Source={StaticResource vInPU}}">
                 <mv:View_NeptunP2  Height="807.989" Canvas.Left="323.082" Canvas.Top="30.275" Width="506.828" />
 
                 <Path Data="M19.5,2.5 L87.606287,2.5 C96.995127,2.5 103.86139,10.111159 103.86139,19.5 L103.86139,111.964 C103.86139,121.35284 96.995127,128.964 87.606287,128.964 L19.5,128.964" Stretch="Fill" Stroke="#FF060606" StrokeThickness="3" VerticalAlignment="Top" Height="134.826" HorizontalAlignment="Right" Width="118.589" Canvas.Top="523.058" Canvas.Left="-32.91" />

@@ -194,9 +194,9 @@ namespace VirtualPultValves.Model
                     for (var i = 0; i <= 23; i++)
                         ListTC[i].ValTC = true;
 
-                    CentOgon.ValueState = true;
+                    CentOgon.ValueState = false;
                 }
-
+                CentOgon.ValueState = v1.HasFlag(BitPosValue.key9);//Центральный огонь
                 DejRegim1.ValueState = v4.HasFlag(BitPosValue.key15);
                 DejRegim2.ValueState = v4.HasFlag(BitPosValue.key16);
                 clInpu_1.ValueState = v3.HasFlag(BitPosValue.key5) || v3.HasFlag(BitPosValue.key6);

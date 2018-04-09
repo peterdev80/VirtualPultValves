@@ -12,9 +12,9 @@
         <avm:ViewModel_InPU x:Key="vInPU"/>
     </UserControl.Resources>
     <UserControl.CommandBindings>
-        <!-- <CommandBinding Command="{x:Static mv:View_InPU.BtnCmd}"
+         <CommandBinding Command="{x:Static mv:View_InPU.BtnCmd}"
                     Executed="BtnCmdExecuted"
-                    CanExecute="BtnCmdCanExecute"/>-->
+                    CanExecute="BtnCmdCanExecute"/>
 
     </UserControl.CommandBindings>
 

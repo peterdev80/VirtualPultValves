@@ -11,7 +11,7 @@
             
         mc:Ignorable="d"
         Title="MainWindow" Background="#FF72EB0D" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Width="1980" Height="1000">
-    <local:WindowInpuR/>
+    <local:WindowInpuR Width="Auto" Height="Auto"/>
     <!-- <Canvas>
         <local:LeftInpuView Height="Auto" Width="Auto"/>
     </Canvas>-->

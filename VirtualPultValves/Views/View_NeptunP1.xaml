@@ -142,9 +142,7 @@
                 </TransformGroup>
             </Path.RenderTransform>
         </Path>
-        <pc:PultBigButton   Content="контр&#xa;  Vп"  Grid.Column="2" Grid.Row="4" d:LayoutOverrides="Height" FontSize="10.667"  x:Name="kip" >
-
-        </pc:PultBigButton >
+        <pc:PultBigButton   Content="контр&#xa;  Vп"  Grid.Column="2" Grid.Row="4" d:LayoutOverrides="Height" FontSize="10.667"  x:Name="kip" />
         <TextBlock Grid.Column="2" Grid.Row="5" TextWrapping="Wrap" TextAlignment="Center"><Run Language="ru-ru" Text="ПК7"/></TextBlock>
         <Canvas  Grid.ColumnSpan="5" Grid.Row="8" Height="107.9" Style="{StaticResource CanvasStyleBDUS}" Width="120">
 
